@@ -1,0 +1,120 @@
+\documentclass{resume}
+\ResumeName{张艺馨}
+
+\usepackage{xcolor}
+\usepackage{calc}
+
+\definecolor{color1}{rgb}{0.22,0.45,0.70}  % light blue
+\definecolor{color2}{rgb}{0.45,0.45,0.45}
+
+\newcommand{\progressbar}[2][2cm]{%
+    \textcolor{color1}{\rule{#1 * \real{#2} / 100}{1.5ex}}%
+    \textcolor{color2!15}{\rule{#1 - #1 * \real{#2} / 100}{1.5ex}}}
+
+\begin{document}
+
+\ResumeContacts{
+  \ResumeUrl{mailto:zyx83028016zyx@gmail.com}{zyx83028016zyx@gmail.com}，%
+  \ResumeUrl{https://github.com/YixinZhang2002}{github.com/YixinZhang2002}，%
+  \ResumeUrl{https://asoulfan.cc}{Personal Blog}%
+}
+
+\ResumeTitle
+
+\section{个人总结}
+
+\begin{itemize}
+  \item 性别男，汉族。具备强大的自驱能力、工程实践能力。热爱技术复现与应用，同时注重人文体验。
+  \item 热爱AI，有计算机视觉与嵌入式项目经验。熟练使用Linux进行运维开发。关注科技发展，追求探索有前景的未知事件，力求提高生产力。
+参与APRU活动，培养国际视野与批判性思维。
+  \item 认同开源文化，维护开源项目；联系布道者，参与腾源会、PapersWithCode、CodaLab、K8s、红帽读书会等社区。
+\end{itemize}
+
+\section{教育经历}
+
+\ResumeItem
+[哈尔滨工业大学|本科在读]
+{哈尔滨工业大学}
+[\textnormal{智能测控工程，电子与信息工程学院|} 本科在读]
+[2020.09—2024.06（预计）]
+
+\textbf{GPA: 3.2/4.0
+%（学年前 15\%）
+}，无挂科。\textbf{2024年应届生}。
+
+荣获2021、2022秋人民奖学金、2021-2022年度优秀学生称号。
+
+英语应用流畅（六级成绩 610）(top 5\%)，入选精英班（top30/ 800），校内课程均分95+。
+
+“互联网+”大学生创新创业竞赛优秀奖，全国大学生学术英语词汇竞赛二等奖。
+
+部分课程：Python 100、AI专家系统应用99 、ARM嵌入式92（top3）、微流控芯片实验室发展及应用90（top1）。
+%
+
+\section[技术能力]{技术能力}%\protect\footnote{蓝色进度条描述技能的熟练度。}
+\begin{itemize}
+\item[] Python，C++，计算机视觉（PyTorch，CNN/ViT），Git，DevOps，Office，Visio \hfill \progressbar{80} 
+\item[] C，AI-NLP/LoRA/Adaptive、NeRF，Docker，MATLAB，Verilog，ARM开发，PCB，SPICE\hfill \progressbar{60} 
+\item[] Java，Rust，Golang，RL/GNN/AutoML/Diffusion，嵌入式开发，RTOS，K8s，Ansible，前端 \hfill \progressbar{30} 
+\item[] 正学习：测控总线技术、试验理论、GTC 2023、GitHub Galaxy 2023、GDC/ 计算机图形学、医学图像分析
+\item[] 详见个人\ResumeUrl{https://asoulfan.cc}{技术博客}
+\end{itemize}
+
+\section{实习经历}
+
+\ResumeItem{黑龙江省工业和信息化厅}
+
+\begin{itemize}
+  \item 暂且保密，欢迎后续联系
+\end{itemize}
+
+\section{科研项目}
+
+\ResumeItem{视频模糊文字识别系统—基于\textbf{CNN}与\textbf{Transformer}}
+[组员，架构设计]
+[2021.09—2022.11] 
+
+\begin{itemize}
+  \item[] \textbf{项目获校一等奖，入选国家级大学生创新创业训练计划项目，结题得分92.6}（计算学部top3/ 50）。
+  \item[] 开发端到端系统，包含目标检测-追踪-图像增强（超分/降噪等）架构。在部分数据集上获sota效果。
+
+主要负责去模糊与文字识别部分。跟进业界发展，与导师商讨引入Transformer架构。创新地用单视觉模型同时解决特征提取和文本转录任务，最终提升PSNR指标1.3dB、英语识别准确率1.7\%，中文2.2\%。
+  \item[] 严格执行项目管理甘特图，并协调每周举办组会，完成经典论文、CVPR与NeurIPS等顶会论文的分析学习。目前负责论文撰写与成果转化，拓展在医疗影像领域应用等。
+\end{itemize}
+
+\ResumeItem{\textbf{IETC:}基于深度学习的智能道闸控制系统}
+[组员，算法部署]
+[2022.04—2022.09] 
+
+\begin{itemize}
+  \item[] 项目代表校智能物联网技术俱乐部，参与2022年全国大学生物联网设计竞赛
+（\textbf{华为杯}）。
+  \item[] 负责目标检测算法在ARM架构微处理器MM32F5270上的部署调优；结合先验信息对YOLOv5架构\textbf{模型压缩}。通过评估-选择-微调，显著减少计算量和参数量，优化提升实时运行帧数约30\%。
+  \item[] 修改项目计划与项目进度管理甘特图模板，供俱乐部，实验室与项目组使用。
+\end{itemize}
+
+\ResumeItem{基于大数据的疫苗接种数据预测与预警}
+[组长]
+[2020.09—2021.08]
+
+\begin{itemize}
+  \item[] 原生项目，\textbf{获校二等奖}。执行项目立项、中期及结题答辩，与数据可视化展示。
+  \item[] 组织学习Hadoop相关知识，并从多数据源获取疫情及疫苗数据。引入改进ARIMA模型阶段性预测COVID-19蔓延趋势，结合大数据平台对社会资源进行建模分析与协调管理，形成系统优化方案。系统短期预测准确率达90\%。
+
+\end{itemize}
+
+\ResumeItem{“三下乡”暑期社会实践}
+[组长，策划]
+[2022.06—2022.09] 
+
+\begin{itemize}
+  \item[] 率领团队探访大国重器。立项阶段入选哈尔滨工业大学社会实践\textbf{重点培育团队}，结题获\textbf{校二等奖}。
+  \item[] 依据防控形势充分准备预案。率领考察采访哈工大航天馆，总结组员后续独立探访成果，形成调研报告与新闻稿。
+
+\end{itemize}
+
+\ResumeItem{其他}
+[参与“兴智杯”全国人工智能创新应用大赛（工信部），北京微电子技术研究所训练营（FPGA）；\hspace*{2.6em} 短期编译移植TWRP Recovery，维护一机型社区；近期调试OpenHarmony富设备移植。\\经历皆可提供证明，欢迎邮件联系]
+
+
+\end{document}
